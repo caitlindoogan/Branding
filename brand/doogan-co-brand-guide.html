@@ -1,0 +1,172 @@
+<title>Doogan &amp; Co Brand Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Layout: a single light brand sheet on paper white, sections stacked like pages of a guide.
+   Deliberately single-theme: the brand lives on white and cream, so colours are set explicitly. */
+:root{
+  --paper:#FFFFFF; --cream:#FDF9F2; --ink:#191917; --copper:#AE6D43; --tan:#B47D57; --taupe:#73665D;
+  --rule:#ECE5DB; --soft:#F6F1E9;
+  --display:"Playfair Display","Bodoni 72",Didot,Georgia,serif;
+  --sans:"Jost","Futura","Century Gothic","Avenir Next",Arial,sans-serif;
+  color-scheme:light;
+}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:40px 80px;display:grid;gap:72px}
+p{margin:0}
+.label{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--taupe)}
+h1,h2{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance;line-height:1.1}
+h1{font-size:clamp(36px,6vw,64px)}
+h2{font-size:clamp(26px,3.4vw,36px)}
+.copy{max-width:62ch;color:#4A433D}
+section{display:grid;gap:22px}
+.sec-head{display:grid;gap:8px;border-top:1px solid var(--rule);padding-top:28px}
+
+/* The wordmark, rebuilt in live type so it scales cleanly */
+.wm{--s:64px;font-family:var(--display);font-weight:400;font-size:var(--s);line-height:.92;text-transform:uppercase;color:var(--wm-ink,var(--ink));display:inline-grid;letter-spacing:.005em}
+.wm .l2{justify-self:end;display:flex;align-items:baseline}
+.wm .dot{display:inline-block;width:.15em;height:.15em;border-radius:50%;background:var(--copper);margin-left:.05em}
+.wm .tag{font-family:var(--sans);font-weight:400;font-size:calc(var(--s) * .2);letter-spacing:.3em;color:var(--wm-tag,var(--taupe));justify-self:end;margin-top:.9em;white-space:nowrap;line-height:1}
+.wm.center .l2,.wm.center .tag{justify-self:center}
+
+/* Hero */
+.hero{display:grid;gap:28px}
+.hero-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px}
+.panel{background:var(--paper);border:1px solid var(--rule);padding:clamp(24px,5vw,56px);display:flex;justify-content:center;align-items:center}
+.lockup{display:flex;align-items:flex-end;gap:clamp(12px,3vw,32px);flex-wrap:wrap;justify-content:center}
+.lockup img{width:clamp(200px,40vw,420px);height:auto}
+.lockup .wm{--s:clamp(40px,7.5vw,92px)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}
+.card{display:grid;grid-template-rows:1fr auto;border:1px solid var(--rule);min-width:0}
+.card .stage{display:grid;place-items:center;padding:32px 20px;min-height:240px}
+.card .cap{display:grid;gap:2px;padding:14px 16px;border-top:1px solid var(--rule);background:var(--paper)}
+.card .cap b{font-weight:500;font-size:15px}
+.card .cap span{font-size:14px;color:var(--taupe)}
+.on-white{background:var(--paper)}
+.on-cream{background:var(--cream)}
+.on-ink{background:var(--ink);--wm-ink:var(--cream);--wm-tag:#BFB3A6}
+.badge{width:min(220px,70%);height:auto}
+
+/* Small sizes */
+.sizes{display:flex;flex-wrap:wrap;gap:28px;align-items:end;padding:22px;border:1px solid var(--rule)}
+.sizes figure{margin:0;display:grid;gap:8px;justify-items:center}
+.sizes figcaption{font-size:12px;color:var(--taupe);font-variant-numeric:tabular-nums}
+.dmark{display:grid;place-items:center;background:var(--ink);border-radius:18%;color:var(--cream);font-family:var(--display);font-weight:500;position:relative}
+.dmark i{position:absolute;border-radius:50%;background:var(--copper)}
+
+/* Colour */
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px}
+.sw{border:1px solid var(--rule);display:grid;min-width:0}
+.sw .chipbox{height:96px}
+.sw div.t{padding:12px 14px;display:grid;gap:2px}
+.sw b{font-weight:500}
+.sw code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:#4A433D;font-variant-numeric:tabular-nums}
+.sw span{font-size:13px;color:var(--taupe)}
+
+/* Type */
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px}
+.type{border:1px solid var(--rule);padding:22px;display:grid;gap:10px;min-width:0}
+.type .big{font-family:var(--display);font-size:56px;line-height:1}
+.type .big.sans{font-family:var(--sans);font-weight:300;letter-spacing:.06em}
+.type .abc{font-size:15px;color:#4A433D;overflow-wrap:anywhere}
+.type .serif{font-family:var(--display)}
+
+/* Rules */
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:14px}
+.rule{border:1px solid var(--rule);padding:20px;display:grid;gap:8px;align-content:start}
+.rule h3{margin:0;font-family:var(--sans);font-weight:500;font-size:16px;display:flex;gap:8px;align-items:center}
+.rule h3 .pill{font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:2px 8px;border-radius:99px}
+.yes{background:#E9F1E6;color:#2F5A2A}
+.no{background:#F6E5DD;color:#8A3A1E}
+.rule p{color:#4A433D;font-size:15px}
+
+/* Business card, 90 × 55 mm (Australian standard) */
+.cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:32px 16px;background:var(--soft)}
+.bc{width:min(100%,360px);aspect-ratio:90/55;box-shadow:0 1px 2px rgba(25,25,23,.08),0 8px 24px rgba(25,25,23,.08);display:grid;padding:22px}
+.bc.front{background:var(--ink);place-items:center;--wm-ink:var(--cream);--wm-tag:#BFB3A6}
+.bc.front .wm{--s:44px}
+.bc.back{background:var(--paper);grid-template-columns:auto 1fr;gap:14px;align-items:end}
+.bc.back img{width:120px;height:auto}
+.bc.back .who{display:grid;gap:2px;justify-items:end;text-align:right}
+.bc.back .name{font-family:var(--display);font-size:20px}
+.bc.back .meta{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}
+.note{font-size:13px;color:var(--taupe)}
+</style>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-top">
+      <div style="display:grid;gap:8px">
+        <span class="label">Brand guide · Version 1</span>
+        <h1>Doogan &amp; Co.</h1>
+      </div>
+      <p class="label" style="letter-spacing:.3em">Advisory for what's next</p>
+    </div>
+    <div class="panel">
+      <div class="lockup">
+        <img src="assets/doogan-beagle.png" alt="A beagle with copper patches, nose to the ground, following a trail">
+        <div class="wm"><span class="l1">Doogan</span><span class="l2">&amp;Co<i class="dot"></i></span><span class="tag">Advisory for what's next</span></div>
+      </div>
+    </div>
+    <p class="copy">The beagle is a scent hound. It works with its nose to the ground, follows the trail to the end and finds what others walk past. That is the promise of Doogan &amp; Co: careful, persistent work that turns up what matters for the next decision.</p>
+  </div>
+
+  <section>
+    <div class="sec-head"><span class="label">01 · Logo set</span><h2>Four versions, one family</h2></div>
+    <p class="copy">Use the primary lockup above wherever there is room. Use the versions below when space is tight or the background is dark.</p>
+    <div class="grid">
+      <div class="card"><div class="stage on-white"><div class="wm center" style="--s:56px"><span class="l1">Doogan</span><span class="l2">&amp;Co<i class="dot"></i></span><span class="tag">Advisory for what's next</span></div></div><div class="cap"><b>Stacked wordmark</b><span>Letterheads, proposals, document covers</span></div></div>
+      <div class="card"><div class="stage on-cream"><img class="badge" src="assets/doogan-badge.png" alt="The beagle inside a copper ring"></div><div class="cap"><b>Badge</b><span>Social profiles, stickers, stamps</span></div></div>
+      <div class="card"><div class="stage on-ink"><div class="wm center" style="--s:56px"><span class="l1">Doogan</span><span class="l2">&amp;Co<i class="dot"></i></span><span class="tag">Advisory for what's next</span></div></div><div class="cap"><b>Reversed wordmark</b><span>Dark backgrounds. The beagle stays on light grounds only.</span></div></div>
+    </div>
+    <div class="sizes" aria-label="Small-size mark">
+      <figure><div class="dmark" style="width:16px;height:16px;font-size:12px">D<i style="width:3px;height:3px;right:2px;bottom:3px"></i></div><figcaption>16 px</figcaption></figure>
+      <figure><div class="dmark" style="width:32px;height:32px;font-size:22px">D<i style="width:5px;height:5px;right:4px;bottom:6px"></i></div><figcaption>32 px</figcaption></figure>
+      <figure><div class="dmark" style="width:64px;height:64px;font-size:44px">D<i style="width:9px;height:9px;right:8px;bottom:12px"></i></div><figcaption>64 px</figcaption></figure>
+      <p class="copy" style="max-width:44ch;font-size:15px">Below about 120 px wide the beagle's detail is lost. Use this "D" with the copper dot for browser tabs and app icons.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="label">02 · Colour</span><h2>Ink, copper and cream</h2></div>
+    <p class="copy">Colours are taken directly from the logo artwork. Ink carries the words, copper is the accent, and cream is the beagle's coat and the warm background.</p>
+    <div class="swatches">
+      <div class="sw"><div class="chipbox" style="background:#191917"></div><div class="t"><b>Ink</b><code>#191917 · 25 25 23</code><span>Wordmark, headings, body text</span></div></div>
+      <div class="sw"><div class="chipbox" style="background:#AE6D43"></div><div class="t"><b>Copper</b><code>#AE6D43 · 174 109 67</code><span>The dot, badge ring, accents</span></div></div>
+      <div class="sw"><div class="chipbox" style="background:#B47D57"></div><div class="t"><b>Beagle tan</b><code>#B47D57 · 180 125 87</code><span>Illustration only</span></div></div>
+      <div class="sw"><div class="chipbox" style="background:#73665D"></div><div class="t"><b>Taupe</b><code>#73665D · 115 102 93</code><span>Tagline, captions, labels</span></div></div>
+      <div class="sw"><div class="chipbox" style="background:#FDF9F2"></div><div class="t"><b>Cream</b><code>#FDF9F2 · 253 249 242</code><span>Backgrounds, reversed text</span></div></div>
+    </div>
+    <p class="note">Copper on white passes the 4.5:1 contrast check for large text only, so keep body text in Ink or Taupe.</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="label">03 · Type</span><h2>A high-contrast serif with a quiet sans</h2></div>
+    <div class="types">
+      <div class="type"><span class="label">Display · Playfair Display</span><span class="big">Doogan</span><p class="abc serif">ABCDEFGHIJKLMNOPQRSTUVWXYZ &amp; 0123456789</p><p class="abc">The closest free match to the wordmark's lettering. Use it for headings and names.</p></div>
+      <div class="type"><span class="label">Text · Jost</span><span class="big sans">Advisory</span><p class="abc">ABCDEFGHIJKLMNOPQRSTUVWXYZ &amp; 0123456789</p><p class="abc">A clean geometric sans that matches the tagline. Use it for body text, and in capitals with wide spacing for labels.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="label">04 · Using the logo</span><h2>Keep the beagle on the trail</h2></div>
+    <div class="rules">
+      <div class="rule"><h3><span class="pill yes">Do</span>Leave space around it</h3><p>Keep a clear margin around any logo at least as tall as the "O" in Doogan.</p></div>
+      <div class="rule"><h3><span class="pill yes">Do</span>Respect minimum sizes</h3><p>Primary lockup at least 40 mm wide in print and 240 px on screen. Wordmark at least 25 mm or 140 px.</p></div>
+      <div class="rule"><h3><span class="pill yes">Do</span>Use the reversed wordmark on dark</h3><p>On Ink or photography, switch to the cream wordmark. The copper dot stays copper.</p></div>
+      <div class="rule"><h3><span class="pill no">Don't</span>Recolour or stretch the beagle</h3><p>The tan, cream and ink are fixed. Scale the artwork evenly from a corner.</p></div>
+      <div class="rule"><h3><span class="pill no">Don't</span>Put the beagle on dark backgrounds</h3><p>Its outline disappears. Use the badge on a cream panel instead.</p></div>
+      <div class="rule"><h3><span class="pill no">Don't</span>Swap the copper dot for a full stop</h3><p>The round copper dot is the brand's signature detail in every version.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="label">05 · In use</span><h2>Business card</h2></div>
+    <div class="cards">
+      <div class="bc front"><div class="wm center"><span class="l1">Doogan</span><span class="l2">&amp;Co<i class="dot"></i></span><span class="tag">Advisory for what's next</span></div></div>
+      <div class="bc back"><img src="assets/doogan-beagle.png" alt=""><div class="who"><span class="name">Caitie Doogan</span><span class="meta">Doogan &amp; Co.</span><span class="meta">Advisory for what's next</span></div></div>
+    </div>
+    <p class="note">Shown at the Australian standard card size of 90 × 55 mm.</p>
+  </section>
+</div>
