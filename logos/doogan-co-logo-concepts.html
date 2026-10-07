@@ -1,0 +1,143 @@
+<title>Doogan &amp; Co Logo Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=Lato:wght@400;700;900&display=swap">
+<style>
+/* Layout: a specimen sheet. Each concept shows on paper and on ink, then at icon sizes. */
+:root{
+  --bg:#F5F7FA; --fg:#0F172A; --muted:#4A5568; --line:#DDE3EA; --panel:#FFFFFF;
+  --paper:#FFFFFF; --ink:#0F172A; --navy:#0F172A; --blue:#0369A1; --blue-light:#38BDF8; --slate:#334155; --mist:#E8ECF1;
+  --serif:"EB Garamond",Garamond,"Times New Roman",serif;
+  --sans:"Lato","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A0F1C;--fg:#E5EAF1;--muted:#9AA6B6;--line:#1F2A3D;--panel:#111A2C;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0A0F1C;--fg:#E5EAF1;--muted:#9AA6B6;--line:#1F2A3D;--panel:#111A2C;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.55}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:20px;padding-block:48px 72px;display:grid;gap:56px}
+header{display:grid;gap:12px;max-width:66ch}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(34px,5vw,52px);line-height:1.05;margin:0;text-wrap:balance}
+h1 em{color:var(--blue-light)}
+@media (prefers-color-scheme:light){h1 em{color:var(--blue)}}
+:root[data-theme="light"] h1 em{color:var(--blue)}
+h2{font-family:var(--serif);font-weight:600;font-size:28px;margin:0;text-wrap:balance}
+p{margin:0}
+.lede{color:var(--muted)}
+section{display:grid;gap:18px;border-top:1px solid var(--line);padding-top:28px}
+.head{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline}
+.tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.why{max-width:66ch;color:var(--muted)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}
+.tile{display:grid;place-items:center;min-height:200px;padding:28px 20px;border:1px solid var(--line)}
+.tile svg{width:100%;height:auto;max-width:var(--w,340px)}
+.on-paper{background:var(--paper);color:var(--navy);--logo-acc:var(--blue)}
+.on-ink{background:var(--ink);color:#FFFFFF;--logo-acc:var(--blue-light);border-color:var(--ink)}
+.sizes{display:flex;flex-wrap:wrap;align-items:end;gap:20px;padding:16px 20px;background:var(--paper);color:var(--navy);--logo-acc:var(--blue);border:1px solid var(--line)}
+.sizes figure{margin:0;display:grid;justify-items:center;gap:6px}
+.sizes figcaption{font-size:12px;color:#4A5568;font-variant-numeric:tabular-nums}
+.system{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px}
+.swatch{display:grid;gap:4px;padding:14px;border:1px solid var(--line);background:var(--panel)}
+.chipless{height:56px;border:1px solid rgba(15,23,42,.12)}
+.swatch b{font-size:14px}
+.swatch code{font-size:13px;color:var(--muted)}
+.type{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}
+.type div{padding:18px;border:1px solid var(--line);background:var(--panel);display:grid;gap:6px}
+.type .s1{font-family:var(--serif);font-size:34px;line-height:1.1}
+.type .s2{font-family:var(--sans);font-size:22px;font-weight:700;letter-spacing:.08em}
+ol{margin:0;padding-left:1.3em;display:grid;gap:8px;max-width:66ch}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Survey benchmark: a broad arrow pointing up to a level bar -->
+    <symbol id="bm" viewBox="0 0 64 64">
+      <rect x="8" y="8" width="48" height="6" fill="var(--logo-acc)"/>
+      <g stroke="currentColor" stroke-width="6" stroke-linecap="butt" fill="none">
+        <line x1="32" y1="18" x2="32" y2="58"/>
+        <line x1="32" y1="18" x2="12" y2="52"/>
+        <line x1="32" y1="18" x2="52" y2="52"/>
+      </g>
+    </symbol>
+    <symbol id="mono" viewBox="0 0 96 96">
+      <rect width="96" height="96" rx="14" fill="#0F172A"/>
+      <text x="37" y="72" text-anchor="middle" font-family="EB Garamond,Garamond,serif" font-weight="600" font-size="66" fill="#FFFFFF">D</text>
+      <text x="74" y="74" text-anchor="middle" font-family="EB Garamond,Garamond,serif" font-style="italic" font-weight="500" font-size="40" fill="#38BDF8">&amp;</text>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Brand identity · Round 1</span>
+    <h1>Doogan <em>&amp;</em> Co</h1>
+    <p class="lede">Four logo directions for a professional consultancy serving civil construction and plant hire. Each one is shown on white, on navy, and at the small sizes it will need for email signatures, favicons and social profiles.</p>
+  </header>
+
+  <section>
+    <div class="head"><span class="tag">Concept A</span><h2>The Wordmark</h2></div>
+    <p class="why">The name set in EB Garamond, with an italic ampersand in blue as the single point of colour. It reads as established and trustworthy, like a law or accounting firm, and works anywhere text works.</p>
+    <div class="tiles">
+      <div class="tile on-paper"><svg viewBox="0 0 360 84" role="img" aria-label="Doogan &amp; Co wordmark"><text x="180" y="60" text-anchor="middle" font-family="EB Garamond,Garamond,serif" font-weight="500" font-size="58" fill="currentColor">Doogan <tspan font-style="italic" fill="var(--logo-acc)">&amp;</tspan> Co.</text></svg></div>
+      <div class="tile on-ink"><svg viewBox="0 0 360 84" role="img" aria-label="Doogan &amp; Co wordmark on navy"><text x="180" y="60" text-anchor="middle" font-family="EB Garamond,Garamond,serif" font-weight="500" font-size="58" fill="currentColor">Doogan <tspan font-style="italic" fill="var(--logo-acc)">&amp;</tspan> Co.</text></svg></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><span class="tag">Concept B</span><h2>The Benchmark</h2></div>
+    <p class="why">The symbol is the surveyor's benchmark: a broad arrow pointing up to a level line, cut into kerbs and walls to mark a fixed height everyone builds from. It says "a reliable reference point" in the language of the industry Doogan &amp; Co works in.</p>
+    <div class="tiles">
+      <div class="tile on-paper" style="--w:400px"><svg viewBox="0 0 400 72" role="img" aria-label="Doogan &amp; Co benchmark logo"><use href="#bm" x="0" y="4" width="64" height="64"/><text x="84" y="47" font-family="Lato,Arial,sans-serif" font-weight="700" font-size="27" letter-spacing="5" fill="currentColor">DOOGAN <tspan fill="var(--logo-acc)">&amp;</tspan> CO</text></svg></div>
+      <div class="tile on-ink" style="--w:400px"><svg viewBox="0 0 400 72" role="img" aria-label="Doogan &amp; Co benchmark logo on navy"><use href="#bm" x="0" y="4" width="64" height="64"/><text x="84" y="47" font-family="Lato,Arial,sans-serif" font-weight="700" font-size="27" letter-spacing="5" fill="currentColor">DOOGAN <tspan fill="var(--logo-acc)">&amp;</tspan> CO</text></svg></div>
+    </div>
+    <div class="sizes">
+      <figure><svg width="16" height="16"><use href="#bm"/></svg><figcaption>16 px</figcaption></figure>
+      <figure><svg width="32" height="32"><use href="#bm"/></svg><figcaption>32 px</figcaption></figure>
+      <figure><svg width="64" height="64"><use href="#bm"/></svg><figcaption>64 px</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><span class="tag">Concept C</span><h2>The Stacked Lockup</h2></div>
+    <p class="why">A heavy, widely spaced surname over a blue rule, finished with a soft italic "&amp; Co." The contrast between the two faces gives it both strength and warmth. It suits a document cover, a hard-hat sticker or a sign.</p>
+    <div class="tiles">
+      <div class="tile on-paper" style="--w:260px"><svg viewBox="0 0 260 136" role="img" aria-label="Doogan &amp; Co stacked logo"><text x="134" y="52" text-anchor="middle" font-family="Lato,Arial,sans-serif" font-weight="900" font-size="42" letter-spacing="8" fill="currentColor">DOOGAN</text><rect x="70" y="68" width="120" height="3" fill="var(--logo-acc)"/><text x="130" y="114" text-anchor="middle" font-family="EB Garamond,Garamond,serif" font-style="italic" font-weight="500" font-size="38" fill="currentColor">&amp; Co.</text></svg></div>
+      <div class="tile on-ink" style="--w:260px"><svg viewBox="0 0 260 136" role="img" aria-label="Doogan &amp; Co stacked logo on navy"><text x="134" y="52" text-anchor="middle" font-family="Lato,Arial,sans-serif" font-weight="900" font-size="42" letter-spacing="8" fill="currentColor">DOOGAN</text><rect x="70" y="68" width="120" height="3" fill="var(--logo-acc)"/><text x="130" y="114" text-anchor="middle" font-family="EB Garamond,Garamond,serif" font-style="italic" font-weight="500" font-size="38" fill="currentColor">&amp; Co.</text></svg></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><span class="tag">Concept D</span><h2>The Monogram</h2></div>
+    <p class="why">A "D" with a blue ampersand tucked against it, inside a navy tile. This is the profile picture and favicon version. It pairs with Concept A, which shares the same typeface.</p>
+    <div class="tiles">
+      <div class="tile on-paper" style="--w:120px"><svg viewBox="0 0 96 96" role="img" aria-label="Doogan &amp; Co monogram"><use href="#mono"/></svg></div>
+      <div class="tile on-ink" style="--w:120px"><svg viewBox="0 0 96 96" role="img" aria-label="Doogan &amp; Co monogram on navy"><rect x="1" y="1" width="94" height="94" rx="14" fill="none" stroke="#475569" stroke-width="2"/><use href="#mono"/></svg></div>
+    </div>
+    <div class="sizes">
+      <figure><svg width="16" height="16"><use href="#mono"/></svg><figcaption>16 px</figcaption></figure>
+      <figure><svg width="32" height="32"><use href="#mono"/></svg><figcaption>32 px</figcaption></figure>
+      <figure><svg width="64" height="64"><use href="#mono"/></svg><figcaption>64 px</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><span class="tag">Shared system</span><h2>Colour and type</h2></div>
+    <div class="system">
+      <div class="swatch"><div class="chipless" style="background:#0F172A"></div><b>Navy</b><code>#0F172A</code></div>
+      <div class="swatch"><div class="chipless" style="background:#0369A1"></div><b>Blue (on white)</b><code>#0369A1</code></div>
+      <div class="swatch"><div class="chipless" style="background:#38BDF8"></div><b>Light blue (on navy)</b><code>#38BDF8</code></div>
+      <div class="swatch"><div class="chipless" style="background:#E8ECF1"></div><b>Mist</b><code>#E8ECF1</code></div>
+    </div>
+    <div class="type">
+      <div><span class="tag">Headings and name</span><span class="s1">EB Garamond</span></div>
+      <div><span class="tag">Body and labels</span><span class="s2">LATO</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><span class="tag">Next</span><h2>How to choose</h2></div>
+    <ol>
+      <li>Pick the concept that feels most like the business. You can also combine two, for example Concept A as the main logo with Concept D as the icon.</li>
+      <li>Tell Claude what to change: colour, weight, spacing, or a tagline under the name.</li>
+      <li>Once you are happy, ask for final files. Claude will export SVG and PNG versions with the lettering converted to shapes, so they look the same on any computer.</li>
+    </ol>
+  </section>
+</div>
